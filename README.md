@@ -9,17 +9,17 @@
   <li><b>Colaboração em Projetos:</b> Desenvolvedores podem colaborar em projetos, criar pull requests e revisar alterações de outros membros da equipe.</li>
   
   <li><b>Integração Contínua e Deploy:</b> GitHub oferece ferramentas para integrar código e realizar deploys automáticos para servidores de produção.</li>
-  <ul>
-  Segurança e Controle de Acesso: O GitHub oferece diferentes níveis de permissões para proteger o código, garantindo que apenas usuários autorizados possam modificar ou visualizar o código.</p>
+  
+  <li><b>Segurança e Controle de Acesso:</b>b O GitHub oferece diferentes níveis de permissões para proteger o código, garantindo que apenas usuários autorizados possam modificar ou visualizar o código.</li>li<ul></p>
 
 <b>GitHub Desktop: Versão para Desktop</b>
 
 <p>GitHub Desktop é uma versão do GitHub para desktop que facilita o uso da plataforma sem precisar da linha de comando. A interface gráfica permite uma experiência mais amigável.
+<ul>
+<li><b>Gerenciamento de Repositórios:</b>b> Permite clonar, criar e gerenciar repositórios diretamente pela interface gráfica.</li>
 
-Gerenciamento de Repositórios: Permite clonar, criar e gerenciar repositórios diretamente pela interface gráfica.
-
-Commits e Branches: Facilita a criação de commits, o gerenciamento de branches e a sincronização com a versão online do GitHub.
-
+<li><b>Commits e Branches:</b>b> Facilita a criação de commits, o gerenciamento de branches e a sincronização com a versão online do GitHub.</li>
+</ul>
 Integração entre GitHub Desktop e GitHub Online
 
 A versão online do GitHub se integra perfeitamente com o GitHub Desktop. Isso permite que os desenvolvedores façam alterações localmente no computador e depois sincronizem com o repositório online.
