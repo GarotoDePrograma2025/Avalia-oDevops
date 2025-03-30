@@ -18,9 +18,6 @@ class Conta:
         else:
             print('Saldo insuficiente ou valor inválido.')
 
-    def consultar_saldo(self):
-        print(f'O saldo da conta {self.numero} é R${self.saldo:.2f}.')
-
     def transferir(self, valor, conta_destino):
         """Transfere um valor de uma conta para outra."""
         if 0 < valor <= self.saldo:
@@ -61,10 +58,9 @@ def menu():
         print("1. Criar conta")
         print("2. Depositar")
         print("3. Sacar")
-        print("4. Consultar saldo")
-        print("5. Listar contas")
-        print("6. Transferir")
-        print("7. Sair")
+        print("4. Listar contas")
+        print("5. Transferir")
+        print("6. Sair")
 
         escolha = input("Escolha uma opção: ")
 
@@ -72,56 +68,3 @@ def menu():
             numero = input("Digite o número da conta: ")
             titular = input("Digite o nome do titular: ")
             banco.criar_conta(numero, titular)
-
-        elif escolha == '2':
-            numero = input("Digite o número da conta: ")
-            conta = banco.buscar_conta(numero)
-            if conta:
-                valor = float(input("Digite o valor a ser depositado: R$"))
-                conta.depositar(valor)
-            else:
-                print("Conta não encontrada.")
-
-        elif escolha == '3':
-            numero = input("Digite o número da conta: ")
-            conta = banco.buscar_conta(numero)
-            if conta:
-                valor = float(input("Digite o valor a ser sacado: R$"))
-                conta.sacar(valor)
-            else:
-                print("Conta não encontrada.")
-
-        elif escolha == '4':
-            numero = input("Digite o número da conta: ")
-            conta = banco.buscar_conta(numero)
-            if conta:
-                conta.consultar_saldo()
-            else:
-                print("Conta não encontrada.")
-
-        elif escolha == '5':
-            banco.listar_contas()
-
-        elif escolha == '6':
-            numero_origem = input("Digite o número da conta de origem: ")
-            conta_origem = banco.buscar_conta(numero_origem)
-            if conta_origem:
-                numero_destino = input("Digite o número da conta de destino: ")
-                conta_destino = banco.buscar_conta(numero_destino)
-                if conta_destino:
-                    valor = float(input("Digite o valor a ser transferido: R$"))
-                    conta_origem.transferir(valor, conta_destino)
-                else:
-                    print("Conta de destino não encontrada.")
-            else:
-                print("Conta de origem não encontrada.")
-
-        elif escolha == '7':
-            print("Saindo do banco...")
-            break
-
-        else:
-            print("Opção inválida! Tente novamente.")
-
-if __name__ == "__main__":
-    menu()
