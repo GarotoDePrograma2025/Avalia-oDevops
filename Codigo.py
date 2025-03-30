@@ -21,6 +21,15 @@ class Conta:
     def consultar_saldo(self):
         print(f'O saldo da conta {self.numero} é R${self.saldo:.2f}.')
 
+    def transferir(self, valor, conta_destino):
+        """Transfere um valor de uma conta para outra."""
+        if 0 < valor <= self.saldo:
+            self.saldo -= valor
+            conta_destino.saldo += valor
+            print(f'Transferência de R${valor:.2f} para a conta {conta_destino.numero} realizada com sucesso!')
+        else:
+            print('Saldo insuficiente ou valor inválido para a transferência.')
+
 class Banco:
     def __init__(self):
         self.contas = {}
@@ -54,7 +63,8 @@ def menu():
         print("3. Sacar")
         print("4. Consultar saldo")
         print("5. Listar contas")
-        print("6. Sair")
+        print("6. Transferir")
+        print("7. Sair")
 
         escolha = input("Escolha uma opção: ")
 
@@ -93,6 +103,20 @@ def menu():
             banco.listar_contas()
 
         elif escolha == '6':
+            numero_origem = input("Digite o número da conta de origem: ")
+            conta_origem = banco.buscar_conta(numero_origem)
+            if conta_origem:
+                numero_destino = input("Digite o número da conta de destino: ")
+                conta_destino = banco.buscar_conta(numero_destino)
+                if conta_destino:
+                    valor = float(input("Digite o valor a ser transferido: R$"))
+                    conta_origem.transferir(valor, conta_destino)
+                else:
+                    print("Conta de destino não encontrada.")
+            else:
+                print("Conta de origem não encontrada.")
+
+        elif escolha == '7':
             print("Saindo do banco...")
             break
 
