@@ -10,7 +10,7 @@
   
   <li><b>Integração Contínua e Deploy:</b> GitHub oferece ferramentas para integrar código e realizar deploys automáticos para servidores de produção.</li>
   
-  <li><b>Segurança e Controle de Acesso:</b>b O GitHub oferece diferentes níveis de permissões para proteger o código, garantindo que apenas usuários autorizados possam modificar ou visualizar o código.</li>li<ul></p>
+  <li><b>Segurança e Controle de Acesso:</b>b O GitHub oferece diferentes níveis de permissões para proteger o código, garantindo que apenas usuários autorizados possam modificar ou visualizar o código.</li></ul></p>
 
 <b>GitHub Desktop: Versão para Desktop</b>
 
