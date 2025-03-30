@@ -1,15 +1,15 @@
 <b>GitHub: Plataforma de Hospedagem de Código</b>
 
- <p> GitHub é uma plataforma de hospedagem de código e controle de versão baseada no Git. Ajuda desenvolvedores a colaborar em projetos de software e gerenciar versões de código.
+  GitHub é uma plataforma de hospedagem de código e controle de versão baseada no Git. Ajuda desenvolvedores a colaborar em projetos de software e gerenciar versões de código.
   
-  Principais Funcionalidades do GitHub
+  <b>Principais Funcionalidades do GitHub</b>
+  <ul>
+  <li><b>Controle de Versão:</b> GitHub permite gerenciar diferentes versões do código, facilitando o acompanhamento de alterações ao longo do tempo.</li>
   
-  Controle de Versão: GitHub permite gerenciar diferentes versões do código, facilitando o acompanhamento de alterações ao longo do tempo.
+  <li><b>Colaboração em Projetos:</b> Desenvolvedores podem colaborar em projetos, criar pull requests e revisar alterações de outros membros da equipe.</li>
   
-  Colaboração em Projetos: Desenvolvedores podem colaborar em projetos, criar pull requests e revisar alterações de outros membros da equipe.
-  
-  Integração Contínua e Deploy: GitHub oferece ferramentas para integrar código e realizar deploys automáticos para servidores de produção.
-  
+  <li><b>Integração Contínua e Deploy:</b> GitHub oferece ferramentas para integrar código e realizar deploys automáticos para servidores de produção.</li>
+  <ul>
   Segurança e Controle de Acesso: O GitHub oferece diferentes níveis de permissões para proteger o código, garantindo que apenas usuários autorizados possam modificar ou visualizar o código.</p>
 
 <b>GitHub Desktop: Versão para Desktop</b>
